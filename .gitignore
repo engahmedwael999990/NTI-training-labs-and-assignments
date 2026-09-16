@@ -17,6 +17,8 @@
 
 # Icarus Verilog
 *.vvp
+sim
+*_sim
 iverilog/
 sim/
 
