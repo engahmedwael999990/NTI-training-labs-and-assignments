@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module i2c_master #(parameter int CLK_FREQ=50_000_000, parameter int I2C_FREQ=100_000) (
     // SystemInterface
     input          clk,
@@ -275,6 +277,13 @@ always @(posedge clk) begin
                   bus_error     <= 1'b1;
                   sda_drive_low <= 1'b0;
                   scl_drive_low <= 1'b0;
+            end
+
+            default: begin
+                busy          <= 1'b0;
+                done          <= 1'b0;
+                sda_drive_low <= 1'b0;
+                scl_drive_low <= 1'b0;
             end
 
          endcase 

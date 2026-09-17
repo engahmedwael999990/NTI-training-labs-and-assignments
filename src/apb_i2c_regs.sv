@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 // -----------------------------------------------------------------------------
 // APB I2C Register Block
 // -----------------------------------------------------------------------------
@@ -117,8 +119,8 @@ module apb_i2c_regs #(
     assign PSLVERR = apb_access && !valid_address;
 
     // -------------------------------------------------------------------------
-    // Internal registers
-    // -------------------------------------------------------------------------    reg        master_start;    reg        master_rw;    reg [6:0]  master_slave_addr;    reg [7:0]  master_tx_data;    reg [31:0] master_clk_div;
+    // Internal status registers
+    // -------------------------------------------------------------------------
 
     reg        done_status;
     reg        ack_error_status;

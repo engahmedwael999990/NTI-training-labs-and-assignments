@@ -11,7 +11,7 @@ vlib work
 vmap work work
 
 # ---- Compile DUT and testbench ----
-vlog -sv +acc I2C_master.sv
+vlog -sv +acc ../src/i2c_master.sv
 vlog -sv +acc i2c_master_tb.sv
 
 # ---- Elaborate / load ----

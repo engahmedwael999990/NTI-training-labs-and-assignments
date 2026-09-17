@@ -49,7 +49,7 @@ module Top_Module_tb;
 
 
     initial PCLK = 0;
-    always #10 PCLK = ~PCLK; // 100 MHz clock
+    always #10 PCLK = ~PCLK; // 50 MHz clock
 
 
     // Testbench variables
@@ -62,11 +62,12 @@ module Top_Module_tb;
     // Task to check test results
     task check(input pass, input [8*64-1:0] test_name);
         begin
-            tests_total = tests_total + 1;
+            test_num = test_num + 1;
             if (pass) begin
-                tests_passed = tests_passed + 1;
+                pass_count = pass_count + 1;
                 $display("PASS: %0s", test_name);
             end else begin
+                fail_count = fail_count + 1;
                 $display("FAIL: %0s", test_name);
             end
         end
@@ -199,7 +200,6 @@ module Top_Module_tb;
 
     reg [7:0] seq_data [0:3];  // array to hold a sequence of data bytes for testing
 
-
      initial 
      begin
 
@@ -219,9 +219,9 @@ module Top_Module_tb;
         // Reset the DUT
         //-----------------------------------------
         PRESETn = 1'b0;
-        repeat(5) @(posedge clk);
+        repeat(5) @(posedge PCLK);
         PRESETn = 1'b1;
-        repeat(5) @(posedge clk);
+        repeat(5) @(posedge PCLK);
 
     
         apb_read(ADDR_STATUS, rdata32); 
