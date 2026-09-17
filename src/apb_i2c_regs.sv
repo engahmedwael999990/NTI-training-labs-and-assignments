@@ -253,7 +253,7 @@ module apb_i2c_regs #(
                     PRDATA = 32'h0000_0000;
                 end
             endcase
-        end
+                end
     end
 
 endmodule
