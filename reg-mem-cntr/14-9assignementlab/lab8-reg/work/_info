@@ -1,0 +1,66 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Materials_Ahmed/Digital/Kareem_Waseem/Digital_Verification/Lab_5
+T_opt
+!s110 1789757170
+VTLJ4]?zbonaJdi9S]GAjX3
+04 13 4 work register_test fast 0
+=1-a0b3396ccd1b-6aad86f1-213-8564
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z0 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vregister
+Z1 !s110 1789757168
+!i10b 1
+!s100 ;zM>GNj8RI_EW_<LzMG]83
+I1`VPo>R3RUF=QCh=KNegn3
+Z2 dC:/Materials_Ahmed/Digital/NTI_FPGA/Summer-26/Assignments/Week2and3/14-9assignementlab/lab8-reg
+w1789757052
+8register.v
+Fregister.v
+!i122 2
+L0 1 19
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z5 !s108 1789757168.000000
+Z6 !s107 register_test.v|register.v|
+Z7 !s90 -reportprogress|300|register.v|register_test.v|
+!i113 0
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+vregister_test
+R1
+!i10b 1
+!s100 mVoUJhWcaXC[><3jLEfPY2
+IRWSbNTJbEUabcSnOfn6LB0
+R2
+w1789580471
+8register_test.v
+Fregister_test.v
+!i122 2
+L0 1 50
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R0

@@ -1,0 +1,15 @@
+C:/Materials_Ahmed/Digital/NTI_FPGA/Summer-26/Assignments/Week2and3/14-9assignementlab/lab8-reg/register_test.v {1 {vlog -work work -vopt -stats=none C:/Materials_Ahmed/Digital/NTI_FPGA/Summer-26/Assignments/Week2and3/14-9assignementlab/lab8-reg/register_test.v
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module register_test
+
+Top level modules:
+	register_test
+
+} {} {}} C:/Materials_Ahmed/Digital/NTI_FPGA/Summer-26/Assignments/Week2and3/14-9assignementlab/lab8-reg/register.v {1 {vlog -work work -vopt -stats=none C:/Materials_Ahmed/Digital/NTI_FPGA/Summer-26/Assignments/Week2and3/14-9assignementlab/lab8-reg/register.v
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module register
+
+Top level modules:
+	register
+
+} {} {}}
